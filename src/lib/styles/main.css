@@ -4,8 +4,10 @@
 }
 
 body {
-	font-family: monospace;
-	font-size: 0.75rem;
+	font-family:
+		system-ui,
+		-apple-system,
+		sans-serif;
 }
 
 label {

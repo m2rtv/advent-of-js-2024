@@ -138,6 +138,8 @@
 		justify-content: center;
 		background-color: #151515;
 		z-index: -1;
+		font-family: monospace;
+		font-size: 0.75rem;
 	}
 	.form {
 		display: grid;
