@@ -1,0 +1,13 @@
+:root {
+	--brand-color: #00634a;
+	--radius: 0.25rem;
+}
+
+body {
+	font-family: monospace;
+	font-size: 0.75rem;
+}
+
+label {
+	font-weight: 500;
+}
