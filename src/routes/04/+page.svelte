@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	let isResizing = $state(false);
 	let startY = $state(0);
@@ -46,26 +46,28 @@
 	<div class="panel-container">
 		<div class="top-panel" style="height: {topHeight}px">
 			<div class="content">Top Panel</div>
-			<div
+			<button
 				class="resize-handle-horizontal"
-				on:mousedown={(e) => {
+				aria-label="Resize top panel"
+				onmousedown={(e) => {
 					isResizing = true;
 					resizeType = 'vertical';
 					startY = e.clientY;
 				}}
-			/>
+			></button>
 		</div>
 		<div class="bottom-container">
 			<div class="left-panel" style="width: {leftWidth}px">
 				<div class="content">Left Panel</div>
-				<div
+				<button
 					class="resize-handle-vertical"
-					on:mousedown={(e) => {
+					aria-label="Resize left panel"
+					onmousedown={(e) => {
 						isResizing = true;
 						resizeType = 'horizontal';
 						startX = e.clientX;
 					}}
-				/>
+				></button>
 			</div>
 			<div class="right-panel">
 				<div class="content">Right Panel</div>
@@ -73,6 +75,8 @@
 		</div>
 	</div>
 </div>
+
+<Footer color="#fff" previous="03" next="05" />
 
 <style>
 	.wrapper {
@@ -122,6 +126,8 @@
 		height: 6px;
 		background: transparent;
 		cursor: ns-resize;
+		border: none;
+		padding: 0;
 	}
 
 	.resize-handle-vertical {

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Footer from '$lib/components/Footer.svelte';
 	let text = $state('');
 	let charCount = $derived(text.length);
 </script>
@@ -9,6 +10,8 @@
 		<p><span class="character-count">Character count:</span> {charCount}</p>
 	</div>
 </div>
+
+<Footer previous="04" next="06" />
 
 <style>
 	.wrapper {

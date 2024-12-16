@@ -1,5 +1,6 @@
 <script lang="ts">
 	import movieData from './top-100-christmas-movies.json';
+	import Footer from '$lib/components/Footer.svelte';
 
 	interface Movie {
 		Title: string;
@@ -148,6 +149,8 @@
 		{/if}
 	</div>
 </div>
+
+<Footer previous="01" next="04" />
 
 <style>
 	.background {

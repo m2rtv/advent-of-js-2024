@@ -1,7 +1,11 @@
 :root {
 	--brand-color: #00634a;
+	--color-text-black: #000;
 	--color-text-muted: #666;
+	--color-text-muted-light: #bbbbbb;
 	--radius: 0.25rem;
+	--radius-lg: 0.5rem;
+	--radius-full: 9999px;
 }
 
 body {
@@ -13,4 +17,8 @@ body {
 
 label {
 	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
 }

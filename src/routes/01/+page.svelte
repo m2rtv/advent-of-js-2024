@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '$lib/components/ui/Icon/Icon.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	let showPassword = false;
 
 	const symbolsArray = ['•', '*', ' ', ' '];
@@ -126,6 +127,8 @@
 		</div> -->
 	</div>
 </div>
+
+<Footer previous="" next="02" />
 
 <style>
 	label {
