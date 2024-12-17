@@ -13,7 +13,7 @@
 
 <div class="wrapper">
 	<div class="text-area-container">
-		<textarea bind:this={textareaEl} on:input={adjustHeight} placeholder="Start typing..."
+		<textarea bind:this={textareaEl} oninput={adjustHeight} placeholder="Start typing..."
 		></textarea>
 	</div>
 </div>

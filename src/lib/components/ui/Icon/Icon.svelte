@@ -8,7 +8,7 @@
 	}
 
 	let {
-		size = '24',
+		size = '20',
 		color = '#000000',
 		iconName,
 		textIconName = 'W',
@@ -73,7 +73,7 @@ Usage:
 		height: 100%;
 	}
 	.icon-wrapper :global(svg path) {
-		fill: #000000;
+		fill: var(--icon-color);
 	}
 	.text-icon {
 		line-height: 1;

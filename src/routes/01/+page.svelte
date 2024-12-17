@@ -117,22 +117,16 @@
 					required
 				/>
 				<button type="button" on:click={() => (showPassword = !showPassword)}>
-					<Icon iconName={showPassword ? 'eye-open' : 'eye-closed'} />
+					<Icon iconName={showPassword ? 'eye-open' : 'eye-slash'} />
 				</button>
 			</div>
 		</div>
-		<!-- <div class="login-button">
-			<button type="submit">Login</button>
-		</div> -->
 	</div>
 </div>
 
 <Footer previous="" next="02" />
 
 <style>
-	label {
-		color: #ffffff;
-	}
 	.wrapper {
 		min-height: 100vh;
 		display: flex;
@@ -158,23 +152,9 @@
 		display: flex;
 		align-items: center;
 		background-color: #fff;
-		padding-right: 0.5rem;
+		padding-right: 1rem;
 		border-radius: var(--radius);
 		border: 1px solid var(--brand-color-200);
-	}
-	.login-button button {
-		all: unset;
-		box-sizing: border-box;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 2rem;
-		background-color: var(--brand-color);
-		color: #ffffff;
-		border-radius: var(--radius);
-		font-weight: 500;
-		margin-top: 1.25rem;
 	}
 	.grid-bg {
 		position: fixed;
