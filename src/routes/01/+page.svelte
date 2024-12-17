@@ -103,13 +103,12 @@
 <div class="wrapper">
 	<div class="form">
 		<div>
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" autocomplete="off" required />
+			<input placeholder="Email" type="email" id="email" name="email" autocomplete="off" required />
 		</div>
 		<div>
-			<label for="pass">Password:</label>
 			<div class="password-input-wrapper">
 				<input
+					placeholder="Password"
 					type={showPassword ? 'text' : 'password'}
 					id="pass"
 					name="password"
@@ -139,9 +138,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: #151515;
+		background-color: var(--brand-color-bg);
 		z-index: -1;
-		font-family: monospace;
 		font-size: 0.75rem;
 	}
 	.form {
@@ -150,29 +148,19 @@
 		width: min(100%, 320px);
 		z-index: 1;
 	}
-	input {
-		all: unset;
-		box-sizing: border-box;
-		width: 100%;
-		height: 2rem;
-		display: flex;
-		align-items: center;
-		background-color: #fff;
-		padding-left: 0.5rem;
-		padding-right: 0.5rem;
-	}
+
 	.password-input-wrapper input {
-		all: unset;
 		width: 100%;
-		height: 100%;
+		border-width: 0px;
+		padding-right: 0px;
 	}
 	.password-input-wrapper {
-		height: 2rem;
 		display: flex;
 		align-items: center;
 		background-color: #fff;
-		padding-left: 0.5rem;
-		padding-right: 0.25rem;
+		padding-right: 0.5rem;
+		border-radius: var(--radius);
+		border: 1px solid var(--brand-color-200);
 	}
 	.login-button button {
 		all: unset;
@@ -185,8 +173,6 @@
 		background-color: var(--brand-color);
 		color: #ffffff;
 		border-radius: var(--radius);
-		padding-left: 0.5rem;
-		padding-right: 0.5rem;
 		font-weight: 500;
 		margin-top: 1.25rem;
 	}
@@ -201,7 +187,7 @@
 		grid-template-columns: repeat(auto-fill, 16px);
 		grid-template-rows: repeat(auto-fill, 16px);
 		gap: 0;
-		color: #ffffff20;
+		color: #ffffff;
 		pointer-events: none;
 	}
 

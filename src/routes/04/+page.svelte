@@ -96,7 +96,7 @@
 	}
 
 	.top-panel {
-		background-color: #f0f0f0;
+		background-color: var(--brand-color-100);
 		position: relative;
 		width: 100%;
 		min-height: 100px;
@@ -109,13 +109,13 @@
 	}
 
 	.left-panel {
-		background-color: #e0e0e0;
+		background-color: var(--brand-color-200);
 		position: relative;
 		min-width: 100px;
 	}
 
 	.right-panel {
-		background-color: #d0d0d0;
+		background-color: var(--brand-color-300);
 		flex: 1;
 	}
 

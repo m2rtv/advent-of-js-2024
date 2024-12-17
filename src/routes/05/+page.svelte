@@ -6,7 +6,7 @@
 
 <div class="wrapper">
 	<div class="text-area-container">
-		<textarea bind:value={text}></textarea>
+		<textarea placeholder="Start typing..." bind:value={text}></textarea>
 		<p><span class="character-count">Character count:</span> {charCount}</p>
 	</div>
 </div>
@@ -20,6 +20,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background-color: var(--brand-color-100);
 	}
 
 	.text-area-container {
@@ -28,19 +29,17 @@
 	}
 
 	.text-area-container textarea {
-		width: 100%;
-		height: 220px;
+		height: 200px;
 	}
 
 	.text-area-container p {
-		margin-top: 0.5rem;
 		text-align: right;
-		font-size: 0.875rem;
+		margin-top: 0.5rem;
 		font-weight: 600;
 	}
 
 	.character-count {
 		font-weight: 400;
-		color: var(--color-text-muted);
+		color: rgba(0, 0, 0, 0.5);
 	}
 </style>

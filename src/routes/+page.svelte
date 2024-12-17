@@ -7,14 +7,14 @@
 			name: 'Show / hide password',
 			completed: true,
 			description:
-				'Create a password input field. Clicking on the eyeball will toggle the password visibility on and off. I did not bother with the svg animation and just used some trickery with the background elements.'
+				'Create a password input field. Clicking on the eyeball will toggle the password visibility on and off. I did not bother with the svg animation and just played with the background elements.'
 		},
 		{
 			day: '02',
 			name: 'Custom combobox / dropdown',
 			completed: true,
 			description:
-				'Custom combobox / dropdown 🎄🎄🎄 with a search field. Got a bit messy and used AI for some things.'
+				'Custom combobox / dropdown 🎄🎄🎄 with a search field. Got a bit messy and used AI for some things, but it works.'
 		},
 		{ day: '03', name: 'Resizable text area', completed: true, description: 'Resizable text area' },
 		{

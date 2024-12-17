@@ -17,7 +17,8 @@
 	let props = $props<Props>();
 	let selected: Movie | null = $state(null);
 	// Randomly selected background when no movie is selected
-	let backgroundMovie = movieData[Math.floor(Math.random() * movieData.length)];
+	// let backgroundMovie = movieData[Math.floor(Math.random() * movieData.length)];
+	let backgroundMovie = movieData[16];
 	let selectExpanded = $state(false);
 	let searchQuery = $state('');
 	let focusedIndex = $state(-1);
@@ -115,7 +116,7 @@
 					<span class="year">({selected.Year})</span>
 				</div>
 			{:else}
-				<span>Select your favourite holiday movie</span>
+				<span class="placeholder">Select your favourite holiday movie</span>
 			{/if}
 			<span class={selectExpanded ? 'menu-open' : 'menu-closed'}>🎄</span>
 		</button>
@@ -184,20 +185,6 @@
 		position: relative;
 	}
 
-	input {
-		all: unset;
-		width: 100%;
-		height: 2rem;
-		display: flex;
-		align-items: center;
-		background-color: #ffffff;
-		border-radius: 6px;
-		box-sizing: border-box;
-		padding-left: 1rem;
-		padding-right: 0.5rem;
-		margin-bottom: 1rem;
-	}
-
 	button {
 		all: unset;
 		width: 100%;
@@ -211,10 +198,10 @@
 		height: 3rem;
 		width: 100%;
 		padding-right: 0.5rem;
-		background: rgba(255, 255, 255, 0.75);
-		padding: 1.5rem;
-		border-radius: 999px;
-		backdrop-filter: blur(8px);
+		background: rgba(255, 255, 255);
+		padding: 1rem;
+		border-radius: var(--radius);
+		border: 1px solid var(--brand-color-200);
 		cursor: pointer;
 	}
 
@@ -233,10 +220,10 @@
 	.movie-list-wrapper {
 		position: relative;
 		top: 0.5rem;
-		background: rgba(255, 255, 255, 0.75);
-		border-radius: 1.5rem;
+		background: #fff;
+		border-radius: var(--radius);
 		overflow: hidden;
-		padding: 1.5rem;
+		padding: 1rem;
 	}
 
 	.movie-list {
@@ -244,6 +231,7 @@
 		flex-direction: column;
 		gap: 0.5rem;
 		max-height: 420px;
+		margin-top: 0.5rem;
 		overflow-y: scroll;
 		scrollbar-width: none; /* Firefox */
 		-ms-overflow-style: none; /* IE and Edge */
@@ -265,7 +253,7 @@
 	}
 
 	.movie-item:hover {
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: var(--brand-color-100);
 	}
 
 	.movie-item img {
@@ -278,14 +266,18 @@
 	}
 	.year {
 		font-weight: 400;
-		color: rgba(0, 0, 0, 0.5);
+		color: var(--brand-color-400);
 	}
 
 	.selected {
-		background-color: rgba(255, 255, 255, 1);
+		background-color: var(--brand-color-100);
 	}
 
 	.focused {
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: var(--brand-color-100);
+	}
+
+	.placeholder {
+		color: var(--brand-color-400);
 	}
 </style>

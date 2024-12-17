@@ -133,10 +133,10 @@
 		display: flex;
 		align-items: center;
 		gap: 1rem;
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
 		background-color: var(--brand-color);
-		border-radius: var(--radius-full);
+		border-radius: var(--radius-lg);
 	}
 	a svg,
 	.disabled svg {
