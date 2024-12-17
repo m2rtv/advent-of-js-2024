@@ -132,6 +132,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		padding: 0 1rem;
 		background-color: var(--brand-color-bg);
 		z-index: -1;
 		font-size: 0.75rem;
@@ -139,7 +140,7 @@
 	.form {
 		display: grid;
 		gap: 1rem;
-		width: min(100%, 320px);
+		width: min(100%, 360px);
 		z-index: 1;
 	}
 

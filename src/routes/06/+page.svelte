@@ -50,7 +50,7 @@
 	}
 
 	.clipboard-input-wrapper {
-		width: min(100%, 320px);
+		width: min(100%, 420px);
 		display: flex;
 		align-items: center;
 		background-color: #fff;

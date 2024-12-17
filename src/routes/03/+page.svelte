@@ -24,6 +24,7 @@
 	.wrapper {
 		width: 100%;
 		height: 100vh;
+		padding: 0 1rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -33,10 +34,10 @@
 	textarea {
 		resize: none;
 		overflow-y: hidden;
-		padding-bottom: 0px;
+		padding-bottom: 1rem;
 	}
 
 	.text-area-container {
-		width: 50%;
+		width: min(100%, 420px);
 	}
 </style>

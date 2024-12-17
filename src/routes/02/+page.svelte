@@ -151,7 +151,7 @@
 	</div>
 </div>
 
-<Footer previous="01" next="04" />
+<Footer previous="01" next="03" />
 
 <style>
 	.background {
@@ -176,8 +176,7 @@
 		margin-top: 1rem;
 		position: relative;
 		font-size: 0.875rem;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding: 0 1rem;
 	}
 
 	.select-wrapper {

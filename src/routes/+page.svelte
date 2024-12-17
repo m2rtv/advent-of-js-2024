@@ -30,8 +30,18 @@
 			description:
 				'Character counter. By far the easiest so far — just binding text with the input and using derived to show text.length.'
 		},
-		{ day: '06', name: 'Coming Soon', completed: false },
-		{ day: '07', name: 'Coming Soon', completed: false },
+		{
+			day: '06',
+			name: 'Copy to clipboard',
+			completed: true,
+			description: 'An input with a copy to clipboard button and a tooltip.'
+		},
+		{
+			day: '07',
+			name: 'Slugify input',
+			completed: false,
+			description: 'Slugify text from the input to a url slug.'
+		},
 		{ day: '08', name: 'Coming Soon', completed: false },
 		{ day: '09', name: 'Coming Soon', completed: false },
 		{ day: '10', name: 'Coming Soon', completed: false },
@@ -68,7 +78,7 @@
 						<a href="/{day}" class="challenge-link" class:completed class:pending={!completed}>
 							{name}
 						</a>
-						<p class="challenge-description">{description}</p>
+						<p class="challenge-description">{@html description}</p>
 					</div>
 				</div>
 			{/each}
@@ -103,6 +113,14 @@
 	.challenge-item {
 		display: grid;
 		grid-template-columns: 1fr 3fr;
+		gap: 1rem;
+	}
+
+	@media (max-width: 600px) {
+		.challenge-item {
+			grid-template-columns: 1fr;
+			gap: 0rem;
+		}
 	}
 
 	.challenge-day {
