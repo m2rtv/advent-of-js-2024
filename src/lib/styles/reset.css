@@ -8,6 +8,7 @@
 /* 2. Remove default margin */
 * {
 	margin: 0;
+	font-size: 100%;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
 	line-height: 1.5;
 	/* 4. Improve text rendering */
 	-webkit-font-smoothing: antialiased;
-	font-size: 100%;
 }
 
 /* 5. Improve media defaults */

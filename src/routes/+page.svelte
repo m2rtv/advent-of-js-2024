@@ -39,7 +39,7 @@
 		{
 			day: '07',
 			name: 'Slugify input',
-			completed: false,
+			completed: true,
 			description: 'Slugify text from the input to a url slug.'
 		},
 		{ day: '08', name: 'Coming Soon', completed: false },
@@ -112,14 +112,13 @@
 
 	.challenge-item {
 		display: grid;
-		grid-template-columns: 1fr 3fr;
-		gap: 1rem;
+		grid-template-columns: 1fr;
 	}
 
-	@media (max-width: 600px) {
+	@media (min-width: 600px) {
 		.challenge-item {
-			grid-template-columns: 1fr;
-			gap: 0rem;
+			grid-template-columns: 1fr 3fr;
+			gap: 1rem;
 		}
 	}
 
@@ -130,6 +129,7 @@
 	.challenge-link {
 		text-decoration: none;
 		transition: all 0.2s ease;
+		font-weight: 500;
 	}
 
 	.challenge-description {
