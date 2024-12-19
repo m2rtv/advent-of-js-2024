@@ -32,12 +32,12 @@
 		</h1>
 		<p>— Kanye West</p>
 	</div>
+	<img
+		src="/yeezy.png"
+		alt="Yeezy"
+		style="left: {randomXPos}px; top: {randomYPos}px; transform: rotate({randomRotation}deg);"
+	/>
 </div>
-<img
-	src="/yeezy.png"
-	alt="Yeezy"
-	style="left: {randomXPos}px; top: {randomYPos}px; transform: rotate({randomRotation}deg);"
-/>
 
 <Footer previous="09" next="15" />
 

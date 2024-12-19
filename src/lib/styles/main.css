@@ -124,6 +124,10 @@ textarea {
 	border: 1px solid var(--brand-color-200);
 }
 
+textarea:focus-visible {
+	border: 1px solid var(--brand-color-600);
+}
+
 textarea::placeholder {
 	color: var(--brand-color-400);
 }

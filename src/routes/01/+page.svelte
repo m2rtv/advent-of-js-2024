@@ -157,6 +157,9 @@
 		border-radius: var(--radius);
 		border: 1px solid var(--brand-color-200);
 	}
+	.password-input-wrapper:focus-within {
+		border: 1px solid var(--brand-color-600);
+	}
 	.grid-bg {
 		position: fixed;
 		top: 0;
