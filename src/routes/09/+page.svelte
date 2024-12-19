@@ -113,7 +113,7 @@
 	</form>
 </div>
 
-<Footer previous="08" next="10" />
+<Footer previous="07" next="12" />
 
 <style>
 	.wrapper {
@@ -136,7 +136,19 @@
 		align-items: center;
 		gap: 0.5rem;
 	}
+
 	button {
+		all: unset;
+		cursor: pointer;
+		font-weight: 500;
+		width: 100%;
+		height: 2.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--brand-color);
+		color: #fff;
+		border-radius: var(--radius);
 		margin-top: 1rem;
 	}
 </style>

@@ -10,13 +10,12 @@
 
 <div class="wrapper">
 	<div class="text-area-container">
-		<!-- <label for="text">Title</label> -->
-		<input id="text" placeholder="Add title to slugify..." bind:value={text} />
+		<input id="text" type="text" placeholder="Add title to slugify..." bind:value={text} />
 		<span class="slugified-title">{title}</span>
 	</div>
 </div>
 
-<Footer previous="06" next="08" />
+<Footer previous="06" next="09" />
 
 <style>
 	.wrapper {
@@ -31,7 +30,7 @@
 
 	.text-area-container {
 		display: grid;
-		width: min(100%, 360px);
+		width: min(100%, 420px);
 	}
 
 	.slugified-title {

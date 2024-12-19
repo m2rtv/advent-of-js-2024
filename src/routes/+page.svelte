@@ -42,23 +42,26 @@
 			completed: true,
 			description: 'Slugify text from the input to a url slug.'
 		},
-		{ day: '08', name: 'Coming Soon', completed: false },
-		{ day: '09', name: 'Coming Soon', completed: false },
-		{ day: '10', name: 'Coming Soon', completed: false },
-		{ day: '11', name: 'Coming Soon', completed: false },
-		{ day: '12', name: 'Coming Soon', completed: false },
-		{ day: '13', name: 'Coming Soon', completed: false },
-		{ day: '14', name: 'Coming Soon', completed: false },
-		{ day: '15', name: 'Coming Soon', completed: false },
-		{ day: '16', name: 'Coming Soon', completed: false },
-		{ day: '17', name: 'Coming Soon', completed: false },
-		{ day: '18', name: 'Coming Soon', completed: false },
-		{ day: '19', name: 'Coming Soon', completed: false },
-		{ day: '20', name: 'Coming Soon', completed: false },
-		{ day: '21', name: 'Coming Soon', completed: false },
-		{ day: '22', name: 'Coming Soon', completed: false },
-		{ day: '23', name: 'Coming Soon', completed: false },
-		{ day: '24', name: 'Coming Soon', completed: false }
+		{
+			day: '09',
+			name: 'Persistent form data',
+			completed: true,
+			description:
+				'Before the user submits the form, they should be able to refresh the page or visit another page, come back, and see all their form data. <br/>Once the user submits the form, the form data should clear'
+		},
+		{
+			day: '12',
+			name: 'Quote generator',
+			completed: true,
+			description: 'Used the Kanye Rest API here instead.'
+		},
+		{
+			day: '15',
+			name: 'Responsive Youtube embed',
+			completed: true,
+			description:
+				'A simple responsive full-width Youtube embed component that respects the aspect ratio.'
+		}
 	];
 </script>
 
@@ -66,8 +69,9 @@
 	<div class="content">
 		<h1>Advent of Javascript 2024</h1>
 		<p>
-			A 24-day JS challenge created by Amy Dutton. I'm not taking the prompts too seriously — just
-			having some fun and modifying them how I see fit ✌️ <br />
+			A 24-day JS challenge created by Amy Dutton. I'm not taking the challenge, or the prompts too
+			seriously — just having some fun, doing select few, and modifying the prompts how I see fit ✌️ <br
+			/>
 			Using Svelte 5.
 		</p>
 		<div class="challenges-list">

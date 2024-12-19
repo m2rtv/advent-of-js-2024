@@ -39,7 +39,7 @@
 	style="left: {randomXPos}px; top: {randomYPos}px; transform: rotate({randomRotation}deg);"
 />
 
-<Footer previous="11" next="13" />
+<Footer previous="09" next="15" />
 
 <style>
 	.wrapper {

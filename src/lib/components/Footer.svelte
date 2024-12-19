@@ -71,13 +71,11 @@
 			<span class="disabled">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
 					viewBox="0 0 24 24"
 					fill="none"
 					class="x47corl x1b1b1ih x98svd5 xnnoyiz"
 					><path
-						d="M10 20L14 4M18 8.00004L22 12L18 16M6 16L2 12L6 8.00004"
+						d="M17 3L20 6L17 9M19 6H10.5C6.91015 6 4 8.91015 4 12.5C4 16.0899 6.91015 19 10.5 19H18"
 						stroke="white"
 						stroke-width="2"
 						stroke-linecap="square"

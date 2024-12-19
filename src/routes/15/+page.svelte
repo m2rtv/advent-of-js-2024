@@ -7,7 +7,7 @@
 	<YoutubeEmbed url="https://www.youtube.com/embed/L_LUpnjgPso?si=F07Dj06o3mXgcCPD" />
 </div>
 
-<Footer previous="14" next="16" />
+<Footer previous="12" nextDisabled />
 
 <style>
 	.wrapper {
