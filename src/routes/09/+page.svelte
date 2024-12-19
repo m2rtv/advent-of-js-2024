@@ -113,7 +113,7 @@
 	</form>
 </div>
 
-<Footer previous="07" next="12" />
+<Footer previous="08" next="12" />
 
 <style>
 	.wrapper {
@@ -128,7 +128,7 @@
 	form {
 		display: grid;
 		gap: 1rem;
-		width: min(100%, 360px);
+		width: min(100%, var(--width-sm));
 		z-index: 1;
 	}
 	.checkbox-item {

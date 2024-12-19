@@ -135,12 +135,11 @@
 		padding: 0 1rem;
 		background-color: var(--brand-color-bg);
 		z-index: -1;
-		font-size: 0.75rem;
 	}
 	.form {
 		display: grid;
 		gap: 1rem;
-		width: min(100%, 360px);
+		width: min(100%, var(--width-sm));
 		z-index: 1;
 	}
 

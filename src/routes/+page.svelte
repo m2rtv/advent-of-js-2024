@@ -43,6 +43,13 @@
 			description: 'Slugify text from the input to a url slug.'
 		},
 		{
+			day: '08',
+			name: 'Tag input editor',
+			completed: true,
+			description:
+				'By default, the input looks like a normal text input. When the user enters some text and then types a comma, the text turns into a tag. The user can enter as many tags as they’d like. If there isn’t any text in the input and the user hits the delete key, then it will delete the last tag in the list.'
+		},
+		{
 			day: '09',
 			name: 'Persistent form data',
 			completed: true,
@@ -93,6 +100,10 @@
 <Footer previousDisabled next="01" />
 
 <style>
+	:global(body) {
+		background-color: white;
+	}
+
 	.wrapper {
 		width: 100%;
 		display: flex;

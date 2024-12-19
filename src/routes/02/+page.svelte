@@ -180,7 +180,7 @@
 	}
 
 	.select-wrapper {
-		width: min(100%, 420px);
+		width: min(100%, var(--width-sm));
 		position: relative;
 	}
 

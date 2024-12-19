@@ -16,6 +16,9 @@
 	--radius: 0.25rem;
 	--radius-lg: 0.875rem;
 	--radius-full: 9999px;
+
+	--width-sm: 24rem;
+	--width-md: 36rem;
 }
 
 body {

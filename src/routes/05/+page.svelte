@@ -26,7 +26,7 @@
 
 	.text-area-container {
 		display: grid;
-		width: min(100%, 420px);
+		width: min(100%, var(--width-md));
 	}
 
 	.text-area-container textarea {

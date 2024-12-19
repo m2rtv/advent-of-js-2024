@@ -13,7 +13,10 @@
 
 <div class="wrapper">
 	<div class="text-area-container">
-		<textarea bind:this={textareaEl} oninput={adjustHeight} placeholder="Start typing..."
+		<textarea
+			bind:this={textareaEl}
+			oninput={adjustHeight}
+			placeholder="Start typing, long texts will expand the textarea..."
 		></textarea>
 	</div>
 </div>
@@ -38,6 +41,6 @@
 	}
 
 	.text-area-container {
-		width: min(100%, 420px);
+		width: min(100%, var(--width-md));
 	}
 </style>

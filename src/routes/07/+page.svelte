@@ -15,7 +15,7 @@
 	</div>
 </div>
 
-<Footer previous="06" next="09" />
+<Footer previous="06" next="08" />
 
 <style>
 	.wrapper {
@@ -30,7 +30,7 @@
 
 	.text-area-container {
 		display: grid;
-		width: min(100%, 420px);
+		width: min(100%, var(--width-sm));
 	}
 
 	.slugified-title {

@@ -3,7 +3,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	let copiedToClipboard = $state(false);
-	let text = $state('Copy input text to clipboard');
+	let text = $state('');
 	let tooltipText = $state('Copy to clipboard');
 
 	let copyToClipboard = () => {
@@ -19,7 +19,12 @@
 
 <div class="wrapper">
 	<div class="clipboard-input-wrapper">
-		<input bind:value={text} type="text" autocomplete="off" />
+		<input
+			bind:value={text}
+			placeholder="Type and copy to clipboard"
+			type="text"
+			autocomplete="off"
+		/>
 		<button type="button" onclick={copyToClipboard}>
 			<Icon
 				iconName={copiedToClipboard ? 'circle-check' : 'clipboard'}
@@ -50,7 +55,7 @@
 	}
 
 	.clipboard-input-wrapper {
-		width: min(100%, 420px);
+		width: min(100%, var(--width-sm));
 		display: flex;
 		align-items: center;
 		background-color: #fff;
